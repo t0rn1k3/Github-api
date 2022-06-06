@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('../images/download-texture-background-free-backgrounds-wallpaper-abstract-images-background-wallpaper-1814381070.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.search-form {
+    width: 600px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+.search-form select {
+    width: 450px;
+    margin: 5px;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgba(249, 251, 252, 0.7);
+}
+
+.search-user {
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    outline: none;
+    background-color: rgba(156, 227, 255, 0.2);
+    color: white;
+}
+.search-user:focus {
+    border: 2px solid rgb(156, 227, 255);
+}
+.search-submit {
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    background-color: #f8edeb;
+}
+.search-submit:hover {
+    background-color: #f9dcc4;
+}
+.info-container {
+    width: 95%;
+    margin: 10px auto;
+    font-size: 17px;
+    color: rgb(0, 6, 43);
+}
+.repository {
+    list-style: none;
+    counter-reset: item;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.repository li {
+    counter-increment: item;
+    background-color: rgba(248, 242, 242,0.8);
+    border-radius: 30px;
+    padding: 7px 0;
+    width: 300px;
+    margin: 5px;
+    transition: 0.3s;
+}
+.repository li:hover{
+    background-color: rgba(248, 242, 242, 1);
+}
+.repository li::before {
+    margin-right: 10px;
+    content: counter(item);
+    background: rgb(45, 51, 53);
+    border-radius: 100%;
+    color: white;
+    width: 1.3em;
+    text-align: center;
+    display: inline-block;
+}
+.info-container a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+.info-container img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.followers li {
+    width: 200px;
+    display: flex;
+    margin: 5px;
+    background-color: rgba(255, 253, 253, 0.5);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.followers li:hover {
+    background-color: rgba(255, 253, 253, 0.8)
+}
+.followers a {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.followers {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
